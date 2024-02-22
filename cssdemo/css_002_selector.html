@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자(selector) 우선순위 숫자가 가장 큰 것에 우선순위 부과/* ! enter 누르면 기본 틀 만들어진다*/
+        
+        /*0001*/
+        p{
+            color: red;
+            font-size: 30px;
+        }
+        /*0010 */
+        .order{
+            color: green;
+        }
+        /*0100 */
+        #unit{
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <p>test1</p>
+                                           <!-- 1000 틀 함부로 바꾸면 안된다.-->
+    <p id="unit" class="order" style="color: purple">test2</p>
+    <p>test3</p>
+    <p class="order">test4</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_006_pseudo.html</title>
+    <style>
+      /*pseudo: 특정 요소의 상태나 위치에 따라 적용되는 가상 클래스 or 요소.*/
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        /* 방문*/
+        color: green;
+      }
+
+      a:hover {
+        /* 갖다 대기*/
+        color: hotpink;
+      }
+
+      a:active {
+        /*클릭했을 때 색 변화*/
+        color: aqua;
+      }
+
+      /*
+      psuedo class를 작성했을 때
+      :link - :visited - :hover- :active 순으로 작성한다.
+      가상요소(pseudo-elements): 요소의 특정 부분을 선택할 때 사용?.첫번째 문자 또는 요소의 내용 앞이나 뒤에 삽입되는 부가적인 콘텐츠를 선택할 수 있다. ::로 표시.
+      */
+    </style>
+  </head>
+  <body>
+    <a href="https://www.w3schools.com">w3schools</a>
+  </body>
+</html>
